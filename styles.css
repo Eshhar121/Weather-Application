@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    background-color: #e1e1e1;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #FAFAFA;
+    border: #FAFAFA;
+    margin: 2%;
+    width: 96%;
+    z-index: 1;
+    border-radius: 20px;
+    display: flex;
+    box-shadow: 1px 1px 6px #c8c8c8;
+}
+
+/* Start Inputs */
+
+.inputs {
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.city-input {
+    margin-left: 10px;
+    height: 1dvh;
+    width: 35%;
+    padding: 10px 16px;
+    border-radius: 20px;
+    border: 3px solid transparent;
+    box-shadow: 1px 1px 6px #c8c8c8;
+    outline: none;
+}
+
+.city-input::placeholder {
+    color: #7d7d7d;
+}
+
+.search-button,.location-button{
+    background: none;
+    border: none;
+    transform: translateY(25%);
+    margin-left: 10px;
+}
+
+/* End Inputs */
+
+/* Start weather */
+
+.location-date-container{
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.date{
+    font-weight: 300;
+    font-size: smaller;
+}
+
+.location {
+    font-weight: bold;
+    font-size: large;
+}
+
+.weather-summary-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.weather-summary-image{
+    margin-left: 25px;
+}
+
+.weather-summary-info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.temp-txt{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.temp{
+}
+
+.temprature{
+    
+}
+
+/* End weather */
+
+
+/* Verticle line */
+.vl{
+    height: 115px;
+    border-left: 2px solid #c8c8c8;
+    margin-top: 35px;
+    margin-left: 50px;
+}
+/* Verticle line */
+
+
+
+/* start weather info */
+
+.weather-info{
+    margin-left: 15px;
+    margin-top: 10px;
+    padding: 10px;
+    width: 80px;
+}
+
+.table-info tr td{
+    padding-left: 20px;
+}
+
+.info-labels {
+    color: #7d7d7d;
+}
+
+/* End weather info */
+
+
+/* Start hourly weather */
+
+.hourly-weather{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 25px;
+}
+
+.hour {
+    background-color: #c8c8c8;
+    width: 100px;
+    height: 150px;
+    margin-left: 20px;
+    border-radius: 20px;
+    padding-block: 10px;
+}
+
+.hour span{
+    align-items: center;
+    justify-content: center;
+    padding-left: 35px;
+}
+
+/* End hourly weather */
