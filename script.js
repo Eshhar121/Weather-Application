@@ -12,7 +12,7 @@ function searchweather() {
     let wind = document.getElementById("wind");
     let visibility = document.getElementById("visibility");
 
-    fetch(`http://api.weatherapi.com/v1/forecast.json?key=ab3f7950032d4d2992c153243240709=${city}`)
+    fetch(`http://api.weatherapi.com/v1/forecast.json?key=f38c9c665dfc402a866165914240210&q=${city}&days=7&aqi=no&alerts=no`)
     .then(res=>res.json())
     .then(data=>{
         location.innerHTML = `${data.location.name},${data.location.country}`
