@@ -139,7 +139,7 @@ body {
 
 .hour {
     background-color: #c8c8c8;
-    width: 100px;
+    width: 130px;
     height: 150px;
     margin-left: 20px;
     margin-top: 10px;
@@ -150,7 +150,7 @@ body {
 .hour span{
     align-items: center;
     justify-content: center;
-    padding-left: 35px;
+    padding-left: 20px;
 }
 
 /* End hourly weather */

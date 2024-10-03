@@ -11,6 +11,10 @@ function searchweather() {
     let precipitation = document.getElementById("precipitation");
     let wind = document.getElementById("wind");
     let visibility = document.getElementById("visibility");
+    let day1 = document.getElementById("day1");
+    let day2 = document.getElementById("day2");
+    let day3 = document.getElementById("day3");
+    let day4 = document.getElementById("day4");
 
     fetch(`http://api.weatherapi.com/v1/forecast.json?key=f38c9c665dfc402a866165914240210&q=${city}&days=7&aqi=no&alerts=no`)
     .then(res=>res.json())
@@ -26,6 +30,17 @@ function searchweather() {
         precipitation.innerHTML = `${data.current.precip_mm}mm`;
         wind.innerHTML = `${data.current.wind_kph}kmh`;
         visibility.innerHTML = `${data.current.vis_km}KM`;
-        console.log(data);
+        day1.innerHTML = `
+                <span>${data.forecast.forecastday[0].date}</span>
+                <img src="${data.forecast.forecastday[0].day.condition.icon}" width="">
+                <span>${data.forecast.forecastday[0].day.avgtemp_c}°</span>`
+        day2.innerHTML = `
+                <span>${data.forecast.forecastday[1].date}</span>
+                <img src="${data.forecast.forecastday[1].day.condition.icon}">
+                <span>${data.forecast.forecastday[1].day.avgtemp_c}°</span>`
+        day3.innerHTML = `
+                <span>${data.forecast.forecastday[2].date}</span>
+                <img src="${data.forecast.forecastday[2].day.condition.icon}">
+                <span>${data.forecast.forecastday[2].day.avgtemp_c}°</span>`
     })
 }
