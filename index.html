@@ -18,7 +18,7 @@
             </span>
         </button>
         
-        <button class="location-button">
+        <button class="location-button" onclick="getLocation()">
             <span class="material-symbols-outlined">
                 share_location
             </span>
@@ -27,61 +27,71 @@
     
     <div class="main-container">
         
-        <div class="temprature">
-            <div class="location-date-container">
-                <div class="location" id="location">
+        <div class="row">
+            <div class="temprature">
+                <div class="location-date-container">
+                    <div class="location" id="location">
+                    </div>
+                    <div class="date" id="date">
+                    </div>
                 </div>
-                <div class="date" id="date">
-                </div>
-            </div>
-            
-            <div class="weather-summary-container">
-                <div id="current-image">
-                </div>
-                <div class="weather-summary-info">
-                    <div class="temp">
-                        <div class="temp-txt" id="temp"></div>
-                        <div class="state" id="state"></div>
+                
+                <div class="weather-summary-container">
+                    <div id="current-image">
+                    </div>
+                    <div class="weather-summary-info">
+                        <div class="temp">
+                            <div class="temp-txt" id="temp"></div>
+                            <div class="state" id="state"></div>
+                        </div>
                     </div>
                 </div>
             </div>
+    
+            <div class="vl"></div>
+    
+            <div class="weather-info">
+                <table class="table-info">
+                    <tr>
+                        <td>
+                            <p><center><div id="feelslike"></div></center><center><span class="info-labels">Feels Like</span></center></p>
+                        </td>
+                        <td>
+                            <p><center><div id="cloud"></div></center><center><span class="info-labels">Cloud</span></center></p>
+                        </td>
+                        <td>
+                            <p><center><div id="humidity"></div></center><center><span class="info-labels">Humidity</span></center></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><center><div id="precipitation"></div></center><center><span class="info-labels">Precipitation</span></center></p>
+                        </td>
+                        <td>
+                            <p><center><div id="wind"></div></center><center><span class="info-labels">Wind</span></center></p>
+                        </td>
+                        <td>
+                            <p><center><div id="visibility"></div></center><center><span class="info-labels">Visibility</span></center></p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </div>
-
-        <div class="vl"></div>
-
-        <div class="weather-info">
-            <table class="table-info">
-                <tr>
-                    <td>
-                        <p><center><div id="feelslike"></div></center><center><span class="info-labels">Feels Like</span></center></p>
-                    </td>
-                    <td>
-                        <p><center><div id="cloud"></div></center><center><span class="info-labels">Cloud</span></center></p>
-                    </td>
-                    <td>
-                        <p><center><div id="humidity"></div></center><center><span class="info-labels">Humidity</span></center></p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p><center><div id="precipitation"></div></center><center><span class="info-labels">Precipitation</span></center></p>
-                    </td>
-                    <td>
-                        <p><center><div id="wind"></div></center><center><span class="info-labels">Wind</span></center></p>
-                    </td>
-                    <td>
-                        <p><center><div id="visibility"></div></center><center><span class="info-labels">Visibility</span></center></p>
-                    </td>
-                </tr>
-            </table>
-        </div>
-
         <div class="hourly-weather">
-            <div class="hour" id="day1">
+            <div class="hour" id="hour1">
             </div>
-            <div class="hour" id="day2">
+            <div class="hour" id="hour2">
             </div>
-            <div class="hour" id="day3">
+            <div class="hour" id="hour3">
+            </div>
+            <div class="hour" id="hour4">
+            </div>
+        </div>
+        
+        <div class="daily-weather">
+            <div class="day" id="day1">
+            </div>
+            <div class="day" id="day2">
             </div>
         </div>
     </div>
